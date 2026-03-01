@@ -1,0 +1,40 @@
+Date for Git Lab Tutorials: 03/01/2026
+GitHub Account setup date: 09/01/2023
+Repository visibility: Public
+
+1. [master 73b4539] Added git status output to docs/status.txt
+ 1 file changed, 5 insertions(+)
+ create mode 100644 docs/status.txt
+PS C:\Users\Hayden Laube\Documents\SCHOOL\CEN4020\Assignment3\assignment2> git push
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 734 bytes | 734.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Haydenlaube/assignment2
+   f4975e5..73b4539  master -> master
+
+2. There have been 9 commits done to the repository not only by me, I used the git command git rev-list --count HEAD to retrieve this information.
+
+3. The README.md file was last modified on Sun Mar 1 14:04:20 2026, the git command I used to get this information was git log -1 -- README.md.
+
+4. Branches are used in a repository to develop new features or experiment with existing ones without breaking the main branch, this allows for isolated testing without the worry of "breaking everything". Another reason branches are used in a repository is to allow a team of developers to work in parallel, while still being able to work independently.
+
+5. git log shows the commit history, it can also show errors that do not show in console when working with containers, this allows you to pinpoint where problems may have arised.
+git status shows the current working directory, it shows whether files have been modified, if they are staged or unstaged, as well as the current branch.
+
+6. The command you would use to see the commits where “Vehicle.h” was one of the committed files would be git log -- Vehicle.h.
+
+7. The command you would use to see the commits whose commit message contains the word “file” would be git log --grep="file".
+
+8. Inheritance in the context of OOP is a class that derives from another class to reuse its data.
+Polymorphism in the context of OOP is the same interface can invoke different implementations depending on the object’s runtime type.
+Encapsulation in the context of OOP is bundling data and methods together in a class and restricting direct access to internal state using access modifiers.
+
+9. The main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow is that the "Dictator" integrates the changes, has the final say. The "Lieutenants" workflow is delegated the responsibility to integrate changes within subsystems before they reach the "Dictator".
+The Integration manager workflow, there is no formal hierarchy, contributors send all of their changes to them and the Integration manager merges them into main.
+
+10. A team of 100 developers would benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow because with the "Dictator and Lieutenants" workflow reduces the number of merge conflicts, work moves up the chain, reviewed and integrated by each subsystem of the hierarchy before the most vetted information reaches the "Dictator" who ultimately merges into master. Having a shared main branch like in the "Centralized" workflow makes merge conflicts more common and the occurrence of a master breaking change more likely.
